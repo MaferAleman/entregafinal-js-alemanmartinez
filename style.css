@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; 
+}
+
+#catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.torta-card {
+    width: 200px; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease; 
+}
+
+.torta-card:hover {
+    transform: scale(1.1); 
+}
+
+
+.torta-card img {
+    width: 150px
+}
+
+body {
+    color: brown;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.titulo {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, cursive; 
+}
+
+.texto {
+    font-size: 16px;
+}
+
+.boton {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, cursive; 
+    font-size: 14px; 
+    background-color: #ffd633; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agregar {
+    padding: 10px 20px !important;
+    font-family: 'Roboto', sans-serif !important;
+    border-radius: 5px;
+    background-color: burlywood;
+    color: white;
+    border: none;
+}
+.btn-agregar:hover {
+    background-color: palevioletred; 
+    color: pink;
+}
+
+.boton:hover {
+    background-color: #ffcc00; 
+}
