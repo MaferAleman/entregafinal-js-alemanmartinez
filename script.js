@@ -51,7 +51,12 @@ function contenidoDOMCargado() {
                     actualizarStock(torta);
                     actualizarTotal();
                 } else {
-                    alert("¡Lo sentimos! Este producto está agotado.");
+                    Swal.fire({
+                        title: '¡Aviso!',
+                        text: '¡Lo sentimos! Este producto está agotado.',
+                        icon: 'warning',
+                        confirmButtonText: 'Entendido'
+                    })
                 }
             });
             card.appendChild(btnAgregar);
@@ -101,10 +106,10 @@ function contenidoDOMCargado() {
         localStorage.removeItem("carrito");
     }
 
+    // Mostrar el catálogo después de cargar los elementos del carrito desde el almacenamiento local
+    actualizarCarrito();
     mostrarCatalogo();
 
     const btnComprar = document.getElementById("comprar");
     btnComprar.addEventListener("click", comprar);
 }
-
-document.addEventListener("DOMContentLoaded", contenidoDOMCargado);
